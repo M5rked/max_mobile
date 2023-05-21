@@ -49,7 +49,7 @@ class _MainScreenState extends State<MainScreen> {
             children: [
               UpBar(),
               const SizedBox(
-                width: 400,
+                width: 200,
                 height: 10,
               ),
               SizedBox(
@@ -78,8 +78,8 @@ class _MainScreenState extends State<MainScreen> {
                             color: Colors.green[0],
                             borderRadius: BorderRadius.circular(10),
                           ),
-                          width: 50,
-                          height: 50,
+                          width: MediaQuery.of(context).size.width * .1,
+                          height: MediaQuery.of(context).size.width * .1,
                           child: const Icon(
                             Icons.shop_outlined,
                             color: Colors.red,
